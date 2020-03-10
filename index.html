@@ -15,6 +15,7 @@
 <!-- 这段js代码是用来判断是展示网页图片还是打开APP,
 window.navigator.standalone 是用来判断网页是否是全屏展示，
 如果是全屏展示，那么就是点击快捷方式打开的，直接执行打开APP的操作即可，
+document.getElementById("msg").innerHTML='<center><img width = 400.000000 src="./images/image_1.jpg"></center>';
 如果不是全屏展示，那么就是通过URL在浏览器中打开的，直接展示网页即可 -->
     <a href="pandareader://" id="qbt" style="display:none"></a> 
     <span id="msg">"IBOOK"</span>
@@ -24,7 +25,6 @@ if (window.navigator.standalone == true) {
     var lnk = document.getElementById("qbt").click();
 } else {
     var lnk = document.getElementById("qbt").click();
-    // document.getElementById("msg").innerHTML='<center><img width = 400.000000 src="./images/image_1.jpg"></center>';
 }
 </script>
 </html>
